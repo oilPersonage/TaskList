@@ -4,7 +4,7 @@ import store from './store/store';
 import TaskCreate from './view/taskCreate/taskCreate';
 import TaskList from './view/taskList/taskWrapper';
 
-import { Container } from './styled/main.style';
+import { Container, SmallContainer } from './styled/main.style';
 import { setTask } from './store/actions';
 
 const { dispatch } = store;
@@ -16,8 +16,12 @@ function App() {
   }, [])
   return (
     <Container>
-      <TaskCreate />
-      <TaskList />
+      <SmallContainer>
+        <TaskCreate />
+      </SmallContainer>
+      <SmallContainer>
+        <TaskList />
+      </SmallContainer>
     </Container>
   );
 }

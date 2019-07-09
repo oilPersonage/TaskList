@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheckSquare, faEdit, faTrash } from '@fortawesome/fontawesome-free-solid';
 
-import {setCompleted, removeTask, updateTask} from '../../store/actions';
+import { setCompleted, removeTask, updateTask } from '../../store/actions';
 
 import { ItemBox, Header } from '../../styled/main.style';
 import Form from '../../components/form';
@@ -15,8 +15,8 @@ const Item = ({ el, dispatch }) => {
   } = el;
 
   const onSubmit = (body) => {
-    setOpen(false)
-    dispatch(updateTask(body, id))
+    setOpen(false);
+    dispatch(updateTask(body, id));
   };
 
   return (
@@ -24,6 +24,7 @@ const Item = ({ el, dispatch }) => {
       <Header>
         {!completed && (
         <FontAwesomeIcon
+          title="Выполнить"
           onClick={() => {
             if (completed) return;
             dispatch(setCompleted(id));
@@ -33,8 +34,15 @@ const Item = ({ el, dispatch }) => {
         )
         }
         <p>{name}</p>
-        {!completed && <FontAwesomeIcon onClick={() => setOpen(true)} icon={faEdit} />}
+        {!completed && (
         <FontAwesomeIcon
+          title="Изменить"
+          onClick={() => setOpen(true)}
+          icon={faEdit}
+        />
+        )}
+        <FontAwesomeIcon
+          title="Удалить"
           onClick={() => dispatch(removeTask(id))}
           icon={faTrash}
         />

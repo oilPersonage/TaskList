@@ -9,7 +9,6 @@ import { ListContainer, Title, Header } from '../../styled/main.style';
 
 const List = ({ list, dispatch, sorted }) => (
   <React.Fragment>
-    {console.log({list, dispatch, sorted})}
     <Title>Список задач</Title>
     <Header>
       <Filters dispatch={dispatch} />

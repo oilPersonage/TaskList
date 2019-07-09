@@ -12,6 +12,8 @@ const mapStateToProps = ({ taskList, filters }) => {
     list = taskList.list.filter(el => el.name.indexOf(field) > -1);
   }
 
+  if (list.length > 0 ) window.localStorage.setItem('task', JSON.stringify(list));
+
   if (sorted) {
     list.sort((a, b) => (a.name > b.name ? 1 : -1));
   }

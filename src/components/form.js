@@ -7,9 +7,12 @@ const Form = ({
 }) => {
   const [name, setName] = useState(storeName || '');
   const [description, setDescription] = useState(storeDescription || '');
-
+  const noValid = name === '' || description === '';
   const onHandle = (e) => {
     e.preventDefault();
+    if (noValid) {
+      return;
+    }
     const body = {
       name, description,
     };
@@ -19,7 +22,7 @@ const Form = ({
   };
 
   return (
-    <FormContainer onSubmit={onHandle}>
+    <FormContainer noValid={noValid} onSubmit={onHandle}>
       <Label short htmlFor="inputName">
         <p>Наименование</p>
         <input type="text" id="inputName" value={name} onChange={e => setName(e.target.value)} />
