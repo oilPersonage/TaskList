@@ -3,13 +3,13 @@ const initState = {
 };
 
 export default function (state = initState, action) {
-  const { type, paylaod } = action;
-  console.log(paylaod, type)
+  const { type, payload } = action;
   switch (type) {
     case 'ADD_TASK': {
-      const newState = state.splice(0);
-      newState.push(paylaod);
-      return { ...state, ...newState };
+      const list = state.list.splice(0);
+      list.push(payload);
+      console.log(list, { ...state, list });
+      return { ...state, list };
     }
     default:
       return state;
