@@ -6,7 +6,8 @@ const Form = ({ storeName, storeDescription, onSubmit }) => {
   const [name, setName] = useState(storeName || '');
   const [description, setDescription] = useState(storeDescription || '');
 
-  const onHandle = () => {
+  const onHandle = (e) => {
+    e.preventDefault()
     const body = {
       name, description,
     };

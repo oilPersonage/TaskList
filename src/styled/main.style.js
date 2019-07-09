@@ -28,4 +28,6 @@ export const Title = styled.h2`
 `
 export const ListContainer = styled.ul`
   text-align: center;
+  list-style: none;
+  padding-left: 0;
 `

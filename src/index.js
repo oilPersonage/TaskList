@@ -6,6 +6,8 @@ import reducers from './store/reducers';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
+import '@fortawesome/fontawesome-svg-core'
+
 const createStoreWithMiddleware = applyMiddleware()(createStore);
 
 ReactDOM.render(

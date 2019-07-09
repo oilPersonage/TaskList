@@ -1,14 +1,19 @@
-import React from 'react'
+import React from 'react';
 
-import Item from './item'
+import Item from './item';
 
-import {ListContainer} from '../../styled/main.style'
+import { ListContainer, Title } from '../../styled/main.style';
 
-const List = ({list}) => {
-  console.log(list)
-  return <ListContainer>
-    {list.map(el => <Item></Item>)}
-  </ListContainer>
-}
+const List = ({ list }) => (
+  <React.Fragment>
+    <Title>Список задач</Title>
+    <ListContainer>
+      {list.length > 0
+        ? list.map(el => <Item />)
+        : <p>Список пуст</p>
+      }
+    </ListContainer>
+  </React.Fragment>
+);
 
-export default List
+export default List;

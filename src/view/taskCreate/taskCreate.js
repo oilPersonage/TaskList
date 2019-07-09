@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 import Form from '../../components/form'
 
@@ -8,8 +8,9 @@ import { addTask } from '../../store/actions';
 import random from '../../utils/randomId'
 
 
-const TaskCreate = ({storeName, storeDescription}) => {
-
+const TaskCreate = () => {
+  const [storeName, setName] = useState('')
+  const [storeDescription, setDescription] = useState('')
   const onSubmit = ({name, description}) => {
     const body = {
       name,
@@ -17,6 +18,8 @@ const TaskCreate = ({storeName, storeDescription}) => {
       id: random(10),
     };
     addTask(body);
+    setName('')
+    setDescription('')
   };
 
   return (
