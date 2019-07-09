@@ -1,5 +1,5 @@
 const initState = {
-  field: 'reset',
+  field: '',
   sorted: false,
 };
 

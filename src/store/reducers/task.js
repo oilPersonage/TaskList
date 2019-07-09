@@ -10,6 +10,9 @@ export default function (state = initState, action) {
       list.push(payload);
       return { ...state, list };
     }
+    case 'SET_TASK': {
+      return { ...state, list: payload };
+    }
     case 'REMOVE_TASK': {
       const list = state.list.splice(0);
       list.forEach((el, index) => {
