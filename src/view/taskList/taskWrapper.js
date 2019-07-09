@@ -1,5 +1,12 @@
-import React from 'react'
+import { connect } from 'react-redux';
+import List from './list';
 
-const TaskWrapper = () => <div>TaskWrapper</div>
+const mapStateToProps = ({ taskList, filters }) => {
+  if (filters.field === 'all') {
+    return { list: taskList.list };
+  }
+  return taskList;
+};
 
-export default TaskWrapper
+
+export default connect(mapStateToProps)(List);

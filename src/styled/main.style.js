@@ -26,3 +26,6 @@ export const Label = styled.label`
 export const Title = styled.h2`
   text-align: center;
 `
+export const ListContainer = styled.ul`
+  text-align: center;
+`
