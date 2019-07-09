@@ -2,7 +2,7 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheckSquare, faEdit, faTrash } from '@fortawesome/fontawesome-free-solid';
 
-import { setCompleted } from '../../store/actions';
+import { setCompleted, removeTask } from '../../store/actions';
 
 import { ItemBox } from '../../styled/main.style';
 
@@ -22,7 +22,10 @@ const Item = ({ el, dispatch }) => {
       />
       <p>{name}</p>
       {!completed && <FontAwesomeIcon icon={faEdit} />}
-      <FontAwesomeIcon icon={faTrash} />
+      <FontAwesomeIcon
+        onClick={() => dispatch(removeTask(id))}
+        icon={faTrash}
+      />
     </ItemBox>
   );
 };

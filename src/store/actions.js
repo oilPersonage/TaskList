@@ -12,11 +12,10 @@ export function addTask(task) {
   };
 }
 
-export function removeTask(task, id) {
+export function removeTask(id) {
   return {
     type: 'REMOVE_TASK',
-    payload: task,
-    id,
+    payload: id,
   };
 }
 
