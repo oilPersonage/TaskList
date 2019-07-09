@@ -12,6 +12,8 @@ const Form = ({ storeName, storeDescription, onSubmit }) => {
       name, description,
     };
     onSubmit(body);
+    setName("")
+    setDescription("")
   };
 
   return (
