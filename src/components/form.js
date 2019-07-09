@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 
 import { FormContainer, Label } from '../styled/main.style';
 
@@ -36,6 +37,13 @@ const Form = ({
 
     </FormContainer>
   );
+};
+
+Form.propTypes = {
+  storeName: PropTypes.string,
+  storeDescription: PropTypes.string,
+  onSubmit: PropTypes.func,
+  edited: PropTypes.bool,
 };
 
 export default Form;

@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import Filters from '../../components/filters';
 import Sorted from '../../components/sorted';
@@ -22,5 +23,11 @@ const List = ({ list, dispatch, sorted }) => (
     </ListContainer>
   </React.Fragment>
 );
+
+List.propTypes = {
+  list: PropTypes.array.isRequired,
+  dispatch: PropTypes.func.isRequired,
+  sorted: PropTypes.bool.isRequired,
+};
 
 export default List;

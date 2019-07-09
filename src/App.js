@@ -10,10 +10,12 @@ import { setTask } from './store/actions';
 const { dispatch } = store;
 
 function App() {
+
   useEffect(() => {
     const task = window.localStorage.getItem('task');
     dispatch(setTask(JSON.parse(task)));
   }, [])
+
   return (
     <Container>
       <SmallContainer>

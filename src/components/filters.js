@@ -1,6 +1,7 @@
 import React, { useRef } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faRedo } from '@fortawesome/fontawesome-free-solid/index';
+import PropTypes from 'prop-types';
 import { FilterBox } from '../styled/main.style';
 import { filtrationTask } from '../store/actions';
 
@@ -19,7 +20,10 @@ const Filters = ({ dispatch }) => {
       />
       <select
         name="select"
-        onChange={(e) => dispatch(filtrationTask(e.target.value))}
+        onChange={e => {
+          input.current.value = '';
+          dispatch(filtrationTask(e.target.value))
+        }}
         id=""
       >
         <option value="">Не выбрано</option>
@@ -35,6 +39,10 @@ const Filters = ({ dispatch }) => {
       />
     </FilterBox>
   );
+};
+
+Filters.propTypes = {
+  dispatch: PropTypes.func.isRequired,
 };
 
 

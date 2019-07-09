@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheckSquare, faEdit, faTrash } from '@fortawesome/fontawesome-free-solid';
 
+import PropTypes from 'prop-types';
 import { setCompleted, removeTask, updateTask } from '../../store/actions';
 
 import { ItemBox, Header } from '../../styled/main.style';
@@ -51,6 +52,11 @@ const Item = ({ el, dispatch }) => {
       }
     </ItemBox>
   );
+};
+
+Item.propTypes = {
+  el: PropTypes.object,
+  dispatch: PropTypes.func.isRequired,
 };
 
 export default Item;
