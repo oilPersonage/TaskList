@@ -32,6 +32,12 @@ export function filtrationTask(value) {
     payload: value,
   };
 }
+export function setSorted(value) {
+  return {
+    type: 'SORTED_TASK',
+    payload: value,
+  };
+}
 
 export function setCompleted(id) {
   return {

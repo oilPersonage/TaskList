@@ -2,15 +2,26 @@ import { connect } from 'react-redux';
 import List from './list';
 
 const mapStateToProps = ({ taskList, filters }) => {
-  switch (filters.field) {
+  const { field, sorted } = filters;
+  let list;
+  switch (field) {
     case 'completed':
-      return { list: taskList.list.filter(el => el.completed === true) };
+      list = taskList.list.filter(el => el.completed === true);
+      return;
     case 'noCompleted':
-      return { list: taskList.list.filter(el => el.completed === false) };
+      list = taskList.list.filter(el => el.completed === false);
+      return;
     default:
-      return { list: taskList.list };
+      list = [...taskList.list];
   }
-  return taskList;
+
+  if (sorted) {
+    console.log(list.sort((a, b) => (a.name > b.name ? -1 : 1)));
+    // list.sort((a, b) => console.log(a, b));
+    // console.log(sorted, list)
+  }
+
+  return { list, sorted };
 };
 
 

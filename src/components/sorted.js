@@ -1,16 +1,14 @@
 import React from 'react';
-import {FilterBox} from '../styled/main.style'
-import {setCompleted} from "../store/actions";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {faSort} from "@fortawesome/fontawesome-free-solid/index";
+import {  faSortAmountDown, faSortAmountUp } from '@fortawesome/fontawesome-free-solid/index';
+import { FilterBox } from '../styled/main.style';
+import { setSorted } from '../store/actions';
 
-const Sorted = () => (
+const Sorted = ({ sorted, dispatch }) => (
   <FilterBox>
     <FontAwesomeIcon
-      onClick={() => {
-        // dispatch(setCompleted(id));
-      }}
-      icon={faSort}
+      onClick={() => dispatch(setSorted(!sorted))}
+      icon={sorted ? faSortAmountUp : faSortAmountDown}
     />
   </FilterBox>
 );

@@ -7,12 +7,12 @@ import Item from './item';
 
 import { ListContainer, Title, Header } from '../../styled/main.style';
 
-const List = ({ list, dispatch }) => (
+const List = ({ list, dispatch, sorted }) => (
   <React.Fragment>
     <Title>Список задач</Title>
     <Header>
       <Filters dispatch={dispatch} />
-      <Sorted dispatch={dispatch} />
+      <Sorted dispatch={dispatch} sorted={sorted} />
     </Header>
     <ListContainer>
       {list.length > 0

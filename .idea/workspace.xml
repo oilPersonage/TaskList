@@ -5,15 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ee951c78-7fe4-490c-85b5-a5acc47cd69c" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/filters.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/sorted.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/form.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/form.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/sorted.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sorted.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/actions.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/reducers/filters.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/filters.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/reducers/task.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/task.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styled/main.style.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/styled/main.style.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/taskList/item.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/taskList/item.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/view/taskList/list.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/taskList/list.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/view/taskList/taskWrapper.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/taskList/taskWrapper.js" afterDir="false" />
     </list>
@@ -41,11 +35,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="taskWrapper.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="taskWrapper.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/view/taskList/taskWrapper.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
+            <state relative-caret-position="462">
+              <caret line="21" column="3" lean-forward="true" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
               </folding>
@@ -65,8 +59,8 @@
       <file leaf-file-name="list.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/view/taskList/list.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="13" column="10" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
+            <state relative-caret-position="308">
+              <caret line="14" column="11" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="11" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -74,11 +68,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sorted.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="sorted.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/sorted.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="7" column="9" lean-forward="true" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
+            <state relative-caret-position="220">
+              <caret line="10" column="54" selection-start-line="10" selection-start-column="54" selection-end-line="10" selection-end-column="54" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -101,8 +95,8 @@
       <file leaf-file-name="actions.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/store/actions.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="501">
-              <caret line="30" column="23" selection-start-line="30" selection-start-column="11" selection-end-line="30" selection-end-column="23" />
+            <state relative-caret-position="457">
+              <caret line="34" column="16" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -110,8 +104,8 @@
       <file leaf-file-name="filters.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/store/reducers/filters.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
-              <caret line="1" column="15" selection-start-line="1" selection-start-column="15" selection-end-line="1" selection-end-column="15" />
+            <state relative-caret-position="308">
+              <caret line="14" column="34" lean-forward="true" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -169,14 +163,14 @@
         <option value="$PROJECT_DIR$/src/view/taskCreate/taskCreate.js" />
         <option value="$PROJECT_DIR$/src/components/form.js" />
         <option value="$PROJECT_DIR$/src/view/taskList/item.js" />
-        <option value="$PROJECT_DIR$/src/components/sorted.js" />
         <option value="$PROJECT_DIR$/src/styled/main.style.js" />
-        <option value="$PROJECT_DIR$/src/view/taskList/list.js" />
         <option value="$PROJECT_DIR$/src/store/reducers/task.js" />
-        <option value="$PROJECT_DIR$/src/store/actions.js" />
         <option value="$PROJECT_DIR$/src/components/filters.js" />
+        <option value="$PROJECT_DIR$/src/store/actions.js" />
         <option value="$PROJECT_DIR$/src/store/reducers/filters.js" />
+        <option value="$PROJECT_DIR$/src/view/taskList/list.js" />
         <option value="$PROJECT_DIR$/src/view/taskList/taskWrapper.js" />
+        <option value="$PROJECT_DIR$/src/components/sorted.js" />
       </list>
     </option>
   </component>
@@ -309,19 +303,19 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1562645369840</updated>
-      <workItem from="1562645371203" duration="9079000" />
+      <workItem from="1562645371203" duration="10112000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9079000" />
+    <option name="totallyTimeSpent" value="10112000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TypeScript" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.15364583" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.15364583" />
       <window_info anchor="bottom" id="TODO" order="9" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" />
@@ -454,13 +448,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/sorted.js">
+    <entry file="file://$PROJECT_DIR$/src/store/reducers/filters.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="9" lean-forward="true" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="308">
+          <caret line="14" column="34" lean-forward="true" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
         </state>
       </provider>
     </entry>
@@ -481,16 +472,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/taskList/list.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="13" column="10" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/filters.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -503,24 +484,37 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/store/actions.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="501">
-          <caret line="30" column="23" selection-start-line="30" selection-start-column="11" selection-end-line="30" selection-end-column="23" />
+        <state relative-caret-position="457">
+          <caret line="34" column="16" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/store/reducers/filters.js">
+    <entry file="file://$PROJECT_DIR$/src/view/taskList/list.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="1" column="15" selection-start-line="1" selection-start-column="15" selection-end-line="1" selection-end-column="15" />
+        <state relative-caret-position="308">
+          <caret line="14" column="11" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="11" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/view/taskList/taskWrapper.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
+        <state relative-caret-position="462">
+          <caret line="21" column="3" lean-forward="true" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
           <folding>
             <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/sorted.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="54" selection-start-line="10" selection-start-column="54" selection-end-line="10" selection-end-column="54" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
