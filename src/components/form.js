@@ -2,7 +2,9 @@ import React, { useState } from 'react';
 
 import { FormContainer, Label } from '../styled/main.style';
 
-const Form = ({ storeName, storeDescription, onSubmit }) => {
+const Form = ({
+  storeName, storeDescription, onSubmit, edited,
+}) => {
   const [name, setName] = useState(storeName || '');
   const [description, setDescription] = useState(storeDescription || '');
 
@@ -27,7 +29,7 @@ const Form = ({ storeName, storeDescription, onSubmit }) => {
         <p>Описание</p>
         <textarea id="inputDescription" value={description} onChange={e => setDescription(e.target.value)} />
       </Label>
-      <input type="submit" value="Добавить" />
+      <input type="submit" value={edited ? 'Изменить' : 'Добавить'} />
 
     </FormContainer>
   );

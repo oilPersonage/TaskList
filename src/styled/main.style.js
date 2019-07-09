@@ -28,13 +28,15 @@ export const Title = styled.h2`
 `
 export const ListContainer = styled.ul`
   text-align: center;
+  padding: 0 25px;
   list-style: none;
-  padding-left: 0;
 `
 export const ItemBox = styled.li`
+  margin-bottom: 10px;
+  box-shadow: 0 1px 3px rgba(0,0,0,.1);
+  border-radius: 3px;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
   padding: 15px 25px;
   background: ${p => p.completed ? '#fafafa' : 'transparent'};
   p {
@@ -52,5 +54,22 @@ export const ItemBox = styled.li`
         fill: orange
       }
     }
+  }
+`
+
+export const Header = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+`
+export const FilterBox = styled.div`
+  display: flex;
+  padding: 0 25px;
+  p {
+    margin: 5px 15px 5px 0;
+  }
+  > svg {
+    padding: 5px;
+    cursor: pointer;
   }
 `

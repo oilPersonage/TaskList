@@ -15,7 +15,7 @@ export function addTask(task) {
 export function removeTask(id) {
   return {
     type: 'REMOVE_TASK',
-    payload: id,
+    id,
   };
 }
 
@@ -26,15 +26,16 @@ export function updateTask(task, id) {
     id,
   };
 }
-export function filtrationTask(filter) {
+export function filtrationTask(value) {
   return {
-    type: 'UPDATE_TASK',
-    payload: filter,
+    type: 'FILTERS_TASK',
+    payload: value,
   };
 }
+
 export function setCompleted(id) {
   return {
     type: 'SET_COMPLETED',
-    payload: id,
+    id,
   };
 }
