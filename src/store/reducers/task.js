@@ -8,7 +8,13 @@ export default function (state = initState, action) {
     case 'ADD_TASK': {
       const list = state.list.splice(0);
       list.push(payload);
-      console.log(list, { ...state, list });
+      return { ...state, list };
+    }
+    case 'SET_COMPLETED': {
+      const list = state.list.splice(0);
+      list.forEach(el => {
+        if (el.id === payload) el.completed = true
+      })
       return { ...state, list };
     }
     default:

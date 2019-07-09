@@ -1,23 +1,24 @@
 import React from 'react';
 
-import Store from '../../store/store'
+import Store from '../../store/store';
 
-import Form from '../../components/form'
+import Form from '../../components/form';
 
 import { Title } from '../../styled/main.style';
 
 import { addTask } from '../../store/actions';
-import random from '../../utils/randomId'
+import random from '../../utils/randomId';
 
-const {dispatch} = Store
+const { dispatch } = Store;
 
 
 const TaskCreate = () => {
-  const onSubmit = ({name, description}) => {
+  const onSubmit = ({ name, description }) => {
     const body = {
       name,
       description,
       id: random(10),
+      completed: false,
     };
     dispatch(addTask(body));
   };

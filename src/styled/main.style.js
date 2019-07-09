@@ -31,3 +31,26 @@ export const ListContainer = styled.ul`
   list-style: none;
   padding-left: 0;
 `
+export const ItemBox = styled.li`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 25px;
+  background: ${p => p.completed ? '#fafafa' : 'transparent'};
+  p {
+    margin: 0;
+    flex-grow: 3;
+  }
+  svg {
+    padding: 10px;
+    cursor: pointer;
+    path {
+      transition: 0.1s;
+    }
+    &:hover {
+      path {
+        fill: orange
+      }
+    }
+  }
+`

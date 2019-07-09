@@ -33,3 +33,9 @@ export function filtrationTask(filter) {
     payload: filter,
   };
 }
+export function setCompleted(id) {
+  return {
+    type: 'SET_COMPLETED',
+    payload: id,
+  };
+}
